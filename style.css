@@ -5,7 +5,6 @@ a {
   text-align: center;
   color: black;
   border-radius: 5px;
-
   padding: 3px;
   cursor: pointer;
   position: relative;
@@ -18,14 +17,13 @@ a::after {
   position: absolute;
   left: 50%;
   background-color: black;
+  transition: linear 0.4s;
 }
 a:hover::after {
   width: 98%;
   left: 1%;
   bottom: 0;
   opacity: 0.8;
-  transition: linear 0.4s;
-  transform-origin: center;
 }
 
 a.active {
